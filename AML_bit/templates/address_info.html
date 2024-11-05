@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Address Information</h2>
+    <table class="table">
+        <tr>
+            <th>Address:</th>
+            <td>{{ address_info.address }}</td>
+        </tr>
+        <tr>
+            <th>Cryptocurrency:</th>
+            <td>{{ address_info.cryptocurrency }}</td>
+        </tr>
+        <tr>
+            <th>Risk Score:</th>
+            <td>{{ address_info.risk_score }}</td>
+        </tr>
+        <tr>
+            <th>Reason:</th>
+            <td>{{ address_info.reason }}</td> <!-- 해킹 유형 표시 -->
+        </tr>
+        <tr>
+            <th>First Seen:</th>
+            <td>{{ address_info.first_seen }}</td>
+        </tr>
+        <tr>
+            <th>Last Seen:</th>
+            <td>{{ address_info.last_seen }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
